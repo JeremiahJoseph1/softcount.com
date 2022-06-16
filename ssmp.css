@@ -1,0 +1,209 @@
+body {
+    background-color: antiquewhite;
+    margin: 0%;
+}
+#body-box {
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#head-div {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    height: 70px;
+    position: relative;
+    width: 100%
+}
+
+
+
+.mLink {
+    /* Format the text appearance */
+    box-sizing: border-box;
+    font-size: large;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* set the alignment of items in the div */
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 2px;
+    padding: 0% 15px;
+    transition: all 150ms ease-out;
+    position: relative;
+    color: white;
+}
+
+.mLink::after {
+    position:absolute;
+    bottom:2%;
+    left: 0;
+    
+    content: "";
+    height: 7%;
+    width: 0%;
+    background-color: white;
+    /* transition: all, 1.9s ease-in-out; */
+    transition: width, 0.33s ease-out;
+}
+
+.mLink:hover.mLink::after{
+    width: 100%;
+}
+
+.mLink:hover {
+    color: goldenrod;
+
+}
+#currentL {
+    background-color: brown;
+    color: goldenrod;
+}
+
+#currentL:hover#currentL::after{
+    width: 100%;
+    left: 0%;
+    background-color: rgb(243, 184, 36);
+}
+
+#currentL:hover {
+    background-color: rgb(199, 42, 42);
+
+}
+#currentL::after{
+    position:absolute;
+    bottom:2%;
+    left: 15%;
+    
+    content: "";
+    height: 7%;
+    width: 70%;
+    background-color: goldenrod;
+    /* transition: all, 1.9s ease-in-out; */
+    transition: width, 0.33s ease-out;
+}
+
+nav a:hover {
+    background-color: rgb(23, 23, 23);
+
+}
+
+#navMenu {
+    display: flex;
+    /* padding-right: 2%; */
+    height: 100%;
+    /* position: absolute; */
+}
+
+nav {
+    display: flex;
+    margin-right: 15px;
+}
+
+#logo {
+    font-size: larger;
+    /* background-color: blueviolet; */
+    display: flex;
+    /*puts its contents to the center */
+    align-items: center;
+    padding: 5px;
+}
+
+/* #logo p {
+    align-self: center;
+} */
+
+#mContent {
+    display: flex;
+    width: 100%;
+    background-color: blue;
+    height: 80vh;
+}
+
+#side-menu {
+    display: flex;
+    background-color: brown;
+    width: 15%;
+}
+
+#menu-bar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#content {
+    display: flex;
+    width: 100%;
+    background-color: aqua;
+    height: 100%;
+}
+
+#menu-bar a {
+    /* padding: 15px 0px; */
+    display: flex;
+    padding-left: 5px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    width: 100%; 
+}
+
+/* #menu-SB {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+} */
+
+#hide-div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+    display: none;
+}
+
+
+#menu-SB a {
+
+} 
+
+#menu-SB a:hover {
+
+} 
+
+#imgF {
+    background-image: url("pic11b.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    /* border-radius: 150px; */
+    height: 80vh;
+}
+
+#menu-bar a {
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    transition: all .05s ease-in-out;
+    border-bottom:rgb(23, 23, 23)
+}
+
+#menu-bar a:hover {
+    color: white;
+    background-color: rgb(128, 41, 41);
+}
+
+#menu-bar a {
+    text-decoration: none;
+}
